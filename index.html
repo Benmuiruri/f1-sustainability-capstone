@@ -22,37 +22,102 @@
     ></script>
   </head>
   <body>
-    <section id="top">
-      <ul class="inner-content">
-        <li>
-          <a href="" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i>
-            <span class="sr-only">Facebook</span></a
+    <header>
+      <!-- Top Section -->
+      <section id="top">
+        <ul class="inner-content">
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-twitter"></i>
+              <span class="sr-only">Twitter</span></a
+            >
+          </li>
+          <li><a href="">English</a></li>
+          <li><a href="">My Page</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </section>
+      <!-- Desktop Nav-->
+      <nav class="desktop-nav">
+        <ul class="inner-content">
+          <li>
+            <a href="index.html" class="nav-logo"
+              ><img src="./images/formula-1-logo.png" alt="F1 Logo" />
+            </a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Program</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">F1 Sustainability</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <ul class="mobile-header-menu">
+          <li class="menu">
+            <a href="#"
+              ><i
+                class="fa-solid fa-bars open-modal"
+                data-open="nav-modal"
+                id="mobile-menu"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="modal" id="nav-modal" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <button
+            type="button"
+            class="close-modal"
+            aria-label="close modal"
+            id="close-menu"
+            data-close
           >
-        </li>
-        <li>
-          <a href="" target="_blank"
-            ><i class="fa-brands fa-twitter"></i>
-            <span class="sr-only">Twitter</span></a
-          >
-        </li>
-        <li><a href="">English</a></li>
-        <li><a href="">My Page</a></li>
-        <li><a href="">Logout</a></li>
-      </ul>
-    </section>
-    <nav>
-      <ul class="inner-content">
-        <li>
-          <a href="index.html" class="nav-logo"><img src="./images/formula-1-logo.png" alt="F1 Logo" /> </a>
-        </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="">Program</a></li>
-        <li><a href="">Join</a></li>
-        <li><a href="">Sponsor</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">F1 Sustainability</a></li>
-      </ul>
-    </nav>
+            ✕
+          </button>
+          <ul class="modal-nav-links">
+            <li>
+              <a href="index.html" class="nav-logo"
+                ><img src="./images/formula-1-logo.png" alt="F1 Logo" />
+              </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="" class="web-header-link">Program</a></li>
+            <li><a href="" class="web-header-link">Join</a></li>
+            <li><a href="" class="web-header-link">Sponsor</a></li>
+            <li><a href="" class="web-header-link">News</a></li>
+            <li><a href="" class="web-header-link">F1 Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero-content">
+        <div class="inner-content">
+          <h1>Hello, Formula One Fans</h1>
+          <p>Formula One Sustainability Global Summit 2022</p>
+          <div class="hero-inner-text">
+            <p>
+              As Formula 1 celebrates its 70th year, we can proudly look back on
+              the amazing history of our sport. Growing from a seven-race
+              calendar in 1950, we have become the world's largest annual global
+              sporting event, racing in 22 countries across 5 continents.
+            </p>
+          </div>
+          <div class="summit-date">
+            <p>2022.10.15(Thu) ~ 16(Fri)</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
