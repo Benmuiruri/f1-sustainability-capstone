@@ -1,0 +1,9 @@
+/* Global styles */
+@font-face {
+  font-family: cocogoose-bold;
+  src: url("../fonts/Cocogoose-Pro-trial.ttf");
+}
+
+#top {
+  font-family: cocogoose-bold, sans-serif;
+}
