@@ -1,9 +1,88 @@
 /* Global styles */
+:root {
+  --lato: 'Lato', sans-serif;
+  --cocogoose: cocogoose-bold, sans-serif;
+  --dark-grey: #3e3e3e;
+  --orange: #ec5242;
+  --grey: #808080;
+  --white: #fff;
+}
 @font-face {
   font-family: cocogoose-bold;
   src: url("../fonts/Cocogoose-Pro-trial.ttf");
 }
 
-#top {
-  font-family: cocogoose-bold, sans-serif;
+body {
+  
+}
+
+/* Top gray bar styles */
+
+#top, nav {
+  font-family: var(--lato);
+  padding: 1rem;
+  background-color: var(--dark-grey);
+}
+
+.inner-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#top ul, nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+#top a, nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+#top a:hover, nav a:hover {
+  color: var(--orange);
+}
+
+#top [class*="fa-"] {
+  font-size: 150%;
+  color: var(--white);
+}
+
+/* Nav styles */
+nav {
+  background-color: var(--white);
+}
+nav ul {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--grey);
+  font-size: 120%;
+  transition: all 0.3s;
+}
+
+.nav-logo {
+  height: 10vh;
+  width: 10vh;
+}
+
+.nav-logo img {
+  padding-top: 2rem;
+  height: 30%;
+}
+
+nav li:first-child {
+  padding-right: 15rem;
+}
+nav li:last-child {
+  padding-left: 5rem;
 }
