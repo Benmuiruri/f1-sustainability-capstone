@@ -20,8 +20,13 @@
   src: url('../fonts/Cocogoose-Pro-Light- Italic-trial.ttf');
 }
 
+html {
+  font-size: 12px;
+}
+
 .hero {
   background-image: url(../images/hero-background.png);
+  background-position: center;
   height: 100vh;
   padding: 1rem 0;
 }
@@ -294,7 +299,7 @@
     background-color: var(--white);
   }
   nav ul {
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
   }
 
@@ -305,19 +310,23 @@
   }
 
   .nav-logo {
-    height: 10vh;
-    width: 10vh;
+    height: 5vh;
+    width: 5vh;
   }
 
   .nav-logo img {
-    padding-top: 2rem;
-    height: 30%;
+    padding-top: 0.7rem;
+    height: 60%;
+  }
+
+  nav li {
+    margin-left: 4rem;
   }
 
   nav li:first-child {
-    padding-right: 15rem;
+    margin-right: auto;
   }
   nav li:last-child {
-    padding-left: 5rem;
+    margin-left: auto;
   }
 }
