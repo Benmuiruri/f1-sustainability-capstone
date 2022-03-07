@@ -1,21 +1,88 @@
 /* Global styles */
 :root {
   --lato: 'Lato', sans-serif;
-  --cocogoose: cocogoose-bold, sans-serif;
+  --cocogoose-b: cocogoose-bold, sans-serif;
+  --cocogoose-t: cocogoose-thin, sans-serif;
   --dark-grey: #3e3e3e;
   --orange: #ec5242;
   --grey: #808080;
+  --light-grey: #f9f9f9;
   --white: #fff;
+  --light-black: #272a31;
 }
 @font-face {
   font-family: cocogoose-bold;
   src: url('../fonts/Cocogoose-Pro-trial.ttf');
 }
 
+@font-face {
+  font-family: cocogoose-thin;
+  src: url('../fonts/Cocogoose-Pro-Light- Italic-trial.ttf');
+}
+
 .hero {
   background-image: url(../images/hero-background.png);
   height: 100vh;
-  border: 1px solid saddlebrown;
+  padding: 1rem 0;
+}
+
+.hero .inner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inner-content h1 {
+  font-family: var(--lato);
+  color: var(--orange);
+  font-size: 2.8rem;
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+
+.inner-content h1 + p {
+  font-family: var(--cocogoose-b);
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--orange);
+  letter-spacing: 0.2rem;
+  padding-left: 2rem;
+  /* border: 1px solid saddlebrown; */
+}
+
+.hero-inner-text {
+  padding-left: 2rem;
+}
+
+.hero-inner-text p {
+  border: 5px solid var(--white);
+  background-color: var(--light-grey);
+  text-align: justify;
+  padding: 1rem 1.5rem;
+  line-height: 1.5;
+  font-family: var(--lato);
+  font-size: 1.2rem;
+  color: var(--light-black);
+  width: 50%;
+}
+
+.venue-details {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.summit-date {
+  text-transform: uppercase;
+  color: var(--dark-grey);
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-family: var(--lato);
+}
+
+.summit-venue {
+  padding-top: 1rem;
+  color: var(--dark-grey);
+  font-family: var(--lato);
+  font-size: 1.9rem;
 }
 
 /* Mobile view styles */
@@ -116,6 +183,50 @@
   [data-animation='slideInOutRight'].is-visible .modal-dialog {
     transform: none;
   }
+
+  /* Hero section styles */
+
+  .inner-content h1 {
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .inner-content h1 + p {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: 0.1rem;
+    padding: 0 1rem;
+  }
+  .hero-inner-text {
+    padding: 0;
+    margin: 0 1rem;
+  }
+  .hero-inner-text p {
+    text-align: justify;
+    padding: 1rem 1.5rem;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    color: var(--light-black);
+    letter-spacing: 0.03em;
+    width: auto;
+  }
+
+  .venue-details {
+    padding: 0;
+  }
+
+  .summit-date {
+    padding: 0 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--lato);
+  }
+
+  .summit-venue {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
 }
 
 /* Tablet view styles */
@@ -126,6 +237,10 @@
   .mobile-header-nav,
   .modal {
     display: none;
+  }
+
+  .hero {
+    /* move the background image up */
   }
 
   /* Top gray bar styles */
