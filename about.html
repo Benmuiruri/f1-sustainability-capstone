@@ -20,25 +20,121 @@
     ></script>
   </head>
   <body>
-    <section class="hero" id="hero-content">
-      <div class="inner-content">
-        <h1>Hello, Formula One Family</h1>
-        <p>Formula One Sustainability Global Summit 2022</p>
-        <div class="hero-inner-text">
-          <p>
-            F1 has been at the forefront of automotive engineering and has
-            pioneered technology that has transformed road safety and
-            efficiency. As Formula, 1 we have changed how we go-to-market with
-            more open and collaborative ways of working, a solutions-focused
-            attitude to new opportunities, and a commitment to have our fans at
-            the heart of everything we do.
-          </p>
+    <header>
+      <!-- Top Section -->
+      <section id="top">
+        <ul class="inner-content">
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-twitter"></i>
+              <span class="sr-only">Twitter</span></a
+            >
+          </li>
+          <li><a href="">English</a></li>
+          <li><a href="">My Page</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </section>
+      <!-- Desktop Nav-->
+      <nav class="desktop-nav">
+        <ul class="inner-content">
+          <li>
+            <a href="index.html" class="nav-logo"
+              ><img src="./images/formula-1-logo.png" alt="F1 Logo" />
+            </a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Program</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">F1 Sustainability</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <ul class="mobile-header-menu">
+          <li class="menu">
+            <a href="#"
+              ><i
+                class="fa-solid fa-bars open-modal"
+                data-open="nav-modal"
+                id="mobile-menu"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="modal" id="nav-modal" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <button
+            type="button"
+            class="close-modal"
+            aria-label="close modal"
+            id="close-menu"
+            data-close
+          >
+            ✕
+          </button>
+          <ul class="modal-nav-links">
+            <li>
+              <a href="index.html" class="nav-logo"
+                ><img src="./images/formula-1-logo.png" alt="F1 Logo" />
+              </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="" class="web-header-link">Program</a></li>
+            <li><a href="" class="web-header-link">Join</a></li>
+            <li><a href="" class="web-header-link">Sponsor</a></li>
+            <li><a href="" class="web-header-link">News</a></li>
+            <li><a href="" class="web-header-link">F1 Sustainability</a></li>
+          </ul>
         </div>
-        <p>
-          For any questions about the upcoming Sustainability Global Summit
-          2022,please reach out to us at <span>Strategy@Formula1.com</span>
-        </p>
       </div>
-    </section>
+    </header>
+    <main>
+      <section class="hero" id="hero-content">
+        <div class="hero-inner-content inner-content about-inner-content">
+          <h1>Hello, Formula One Family</h1>
+          <p class="large-text">Formula One Global Summit 2022</p>
+          <hr class="orange-line" />
+          <div class="about-inner-text">
+            <p class="web-text">
+              The Global Summit brings together the community of experts,
+              academics, and activists who comprise the Creative Commons
+              affiliate network in a different country every two years. This
+              year, we hope to expand our invitation list including
+              organizations and invidivuals who want to work with us on shared
+              projects that advance the cause of the Commons, free culture and
+              open knowledge. So if you're active and engaged in the worlds of
+              open content and knowledge - free software advocates, Wikipedians.
+              Open Knowledge, galleries, libraries, museums, archives,
+              governments and foundations, lawyers, and activists - we hope
+              you'll consider joining us this year to build a stronger, more
+              vibrant commons together.
+            </p>
+            <p class="mobile-text">
+              The Global Summit brings together the community of experts,
+              academics, and activists who comprise the Creative Commons
+              affiliate network in a different country every two years. This
+              year, we hope to expand our invitation list including
+              organizations and invidivuals.
+            </p>
+          </div>
+          <p class="action-call">
+            For any questions about the upcoming F1 Sustainability Global Summit
+            2022,please email us!
+          </p>
+          <a href="#">strategy@Formula1.com</a>
+        </div>
+      </section>
+      
+    </main>
   </body>
 </html>
