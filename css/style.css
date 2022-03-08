@@ -305,7 +305,7 @@ html {
 
   nav a {
     color: var(--grey);
-    font-size: 120%;
+    font-size: 150%;
     transition: all 0.3s;
   }
 
@@ -320,13 +320,13 @@ html {
   }
 
   nav li {
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
 
   nav li:first-child {
     margin-right: auto;
   }
   nav li:last-child {
-    margin-left: auto;
+    margin-left: 15rem;
   }
 }
