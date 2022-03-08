@@ -90,6 +90,73 @@ html {
   font-size: 1.9rem;
 }
 
+/* Main program styles */
+.program {
+  background-image: url(../images/program-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.program h2 {
+  color: var(--white);
+  font-size: 3rem;
+  font-family: var(--lato);
+  text-transform: capitalize;
+  padding-top: 3rem;
+}
+
+.orange-line {
+  border: 1px solid var(--orange);
+  margin: 3rem auto;
+  width: 30%;
+}
+
+.program-tile {
+  margin: 1.5rem 2rem;
+  background: rgba(57, 60, 67, 0.7);
+  display: flex;
+  align-items: center;
+  font-family: var(--lato);
+  gap: 3%;
+}
+
+.program-tile i {
+  color: var(--white);
+  font-size: 3rem;
+  padding: 2rem;
+  flex-basis: 10%;
+}
+
+.program-tile h3 {
+  color: var(--orange);
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-weight: bold;
+  flex-basis: 20%;
+}
+
+.program-tile p {
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 1rem 0.3rem;
+  line-height: 1.5;
+  flex-basis: 70%;
+}
+
+.join-button {
+  background-color: var(--orange);
+  padding: 4rem;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem;
+}
+
 /* Mobile view styles */
 
 @media screen and (max-width: 768px) {
@@ -232,6 +299,11 @@ html {
     padding: 0.5rem 1rem;
     font-size: 1.3rem;
   }
+
+  /* Main program styles */
+  .view-more {
+    display: none;
+  }
 }
 
 /* Tablet view styles */
@@ -328,5 +400,48 @@ html {
   }
   nav li:last-child {
     margin-left: 15rem;
+  }
+
+  /* Main program styles */
+  .orange-line {
+    margin: 1.5rem auto;
+  }
+  .program-header {
+    padding: 3rem 0;
+  }
+  .program-wrapper {
+    display: flex;
+  }
+  .program-tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join-button {
+    display: none;
+  }
+  .view-more {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 10rem 0;
+  }
+
+  .program-tile {
+    margin: 0.3rem;
+  }
+
+  .program-tile i {
+    color: var(--white);
+    font-size: 5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .program-tile p {
+    padding: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 }
