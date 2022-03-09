@@ -40,7 +40,9 @@ Feel free to check the [issues page](https://github.com/Benmuiruri/f1-sustainabi
 ## Show your support
 
 Give a ⭐️ if you like this project!
+## Video Presentation
 
+You can view a video describing the functionality of the website on [loom](https://www.loom.com/share/1bff608d8ca44673b79ef04b165a6e3c)
 ## Acknowledgments and Attribution
 
 - The design has been inspired by [Cindy Shin](https://www.behance.net/adagio07) design on Behance.
