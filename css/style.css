@@ -34,6 +34,18 @@ html {
   padding-bottom: 3em;
 }
 
+/* title */
+/* font-size: 6rem;
+font-family: 'cocogoose', sans-serif;
+color: var(--seconderyColor);
+background-image: url("/Components/Pages/Assets/main.jpeg");
+background-size: cover;
+background-position: center center;
+background-clip: initial;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+*/
+
 .hero-inner-content {
   display: flex;
   flex-direction: column;
