@@ -1,40 +1,52 @@
 // List of speaker objects
 
 const speaker1 = {
-  imageSrc: '../images/ross-brawn.jpg',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646837183/module1-capstone/ross-brawn_qgmohf.jpg',
   speakerName: 'Ross Brawn',
-  title: '',
-  speakerDescription: '',
+  title: 'Formula One managing director and technical director',
+  speakerDescription:
+    'He is a former motorsport engineer and Formula One team principal, and has worked for a number of Formula One teams',
 };
 const speaker2 = {
-  imageSrc: '../images/muhammed.png',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646836905/module1-capstone/muhammed_vjgy7k.png',
   speakerName: 'Mohammed Ben Sulayem',
-  title: '',
-  speakerDescription: '',
+  title: 'President of the FIA ',
+  speakerDescription:
+    "He is one of the Arab world's leading motor sport figures. He is a patron of a wide range of charities that are researching sustainability inmotor sport",
 };
 const speaker3 = {
-  imageSrc: '../images/wolff.jpg',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646836934/module1-capstone/wolff_d8xhsz.jpg',
   speakerName: 'Toto Wolff',
-  title: '',
-  speakerDescription: '',
+  title: 'Team Principal and CEO: Mercedes-AMG Petronas F1 Team',
+  speakerDescription:
+    'Toto Wolff, who as CEO has led the Mercedes team to seven drivers and constructors world championship titles in Formula 1',
 };
 const speaker4 = {
-  imageSrc: '../images/christian-horner-2021.jpg',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646836856/module1-capstone/christian_mgsob4.jpg',
   speakerName: 'Christian Horner',
-  title: '',
-  speakerDescription: '',
+  title: 'Team Principal: Red Bull Formula One team',
+  speakerDescription:
+    'RED BULL team principal Christian Horner has outlined future plans for F1 to become more sustainable.',
 };
 const speaker5 = {
-  imageSrc: '../images/../images/lewis.jpg',
-  speakerName: 'Lewis Hamilton',
-  title: '',
-  speakerDescription: '',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646837245/module1-capstone/lewis_dwouxe.jpg',
+  speakerName: 'Sir Lewis Hamilton',
+  title: 'Seven-time world F1 champion ',
+  speakerDescription:
+    'Lewis Hamilton has defended his interest in raising awareness about environmental issues, insisting his Mercedes team is working to become "carbon neutral."',
 };
 const speaker6 = {
-  imageSrc: '../images/sebastian-vettel.jpg',
+  imageSrc:
+    'https://res.cloudinary.com/optprime/image/upload/v1646837318/module1-capstone/sebastian-vettel_ch6odf.jpg',
   speakerName: 'Sebastian Vettel',
-  title: '',
-  speakerDescription: '',
+  title: 'F1 Driver for Aston Martin',
+  speakerDescription:
+    'He has been shining a spotlight on sustainability and the environment and speaking out on behalf of the L.G.B.T.Q. community.',
 };
 
 const speakers = [speaker1, speaker2, speaker3, speaker4, speaker5, speaker6];
@@ -123,18 +135,22 @@ for (let i = 0; i < speakers.length; i++) {
   //Add speaker profile elements
   const speakerFullName = document.createElement('h3');
   speakerFullName.textContent = `${speakers[i].speakerName}`;
+  speakerFullName.className = 'speaker-full-name';
   speakerProfile.appendChild(speakerFullName);
   const speakerDesc = document.createElement('p');
   speakerDesc.textContent = `${speakers[i].title}`;
+  speakerDesc.className = 'speaker-title';
   speakerProfile.appendChild(speakerDesc);
   const greyLine = document.createElement('hr');
   greyLine.className = 'grey-line';
   speakerProfile.appendChild(greyLine);
   const speakerBio = document.createElement('p');
   speakerBio.textContent = `${speakers[i].speakerDescription}`;
+  speakerBio.className = 'speaker-bio';
   speakerProfile.appendChild(speakerBio);
   //Apped speaker profile to speaker tile
   speakerTile.appendChild(speakerProfile);
-  innerDiv.appendChild(speakerTile);
+  speakersWrapper.appendChild(speakerTile);
+  innerDiv.appendChild(speakersWrapper);
 }
 speakerSection.appendChild(innerDiv);
