@@ -102,6 +102,7 @@ navLinks.forEach((elem) => {
 
 const speakerSection = document.querySelector('#speakers');
 // Create inner Div
+
 const innerDiv = document.createElement('div');
 innerDiv.className = 'inner-content';
 const speakerHeader = document.createElement('div');
@@ -113,44 +114,51 @@ orangeLine.className = 'orange-line';
 speakerHeader.appendChild(speakerTitle);
 speakerHeader.appendChild(orangeLine);
 innerDiv.appendChild(speakerHeader);
-//Create Speakers list wrapper
+// Create Speakers list wrapper
+
 const speakersWrapper = document.createElement('div');
 speakersWrapper.className = 'speakers-wrapper';
 
 // Create speaker divs for available speakers
-for (let i = 0; i < speakers.length; i++) {
-  //Create speaker tile
+
+speakers.forEach((speaker) => {
+  // Create speaker tile
+
   const speakerTile = document.createElement('div');
   speakerTile.className = 'speaker-tile';
-  //Create speaker image
+  // Create speaker image
+
   const speakerImgDiv = document.createElement('div');
   speakerImgDiv.className = 'speaker-img';
   const speakerImg = document.createElement('img');
-  speakerImg.src = `${speakers[i].imageSrc}`;
+  speakerImg.src = `${speaker.imageSrc}`;
   speakerImgDiv.appendChild(speakerImg);
   speakerTile.appendChild(speakerImgDiv);
-  //Create speaker profile
+  // Create speaker profile
+
   const speakerProfile = document.createElement('div');
   speakerProfile.className = 'speaker-profile';
-  //Add speaker profile elements
+  // Add speaker profile elements
+
   const speakerFullName = document.createElement('h3');
-  speakerFullName.textContent = `${speakers[i].speakerName}`;
+  speakerFullName.textContent = `${speaker.speakerName}`;
   speakerFullName.className = 'speaker-full-name';
   speakerProfile.appendChild(speakerFullName);
   const speakerDesc = document.createElement('p');
-  speakerDesc.textContent = `${speakers[i].title}`;
+  speakerDesc.textContent = `${speaker.title}`;
   speakerDesc.className = 'speaker-title';
   speakerProfile.appendChild(speakerDesc);
   const greyLine = document.createElement('hr');
   greyLine.className = 'grey-line';
   speakerProfile.appendChild(greyLine);
   const speakerBio = document.createElement('p');
-  speakerBio.textContent = `${speakers[i].speakerDescription}`;
+  speakerBio.textContent = `${speaker.speakerDescription}`;
   speakerBio.className = 'speaker-bio';
   speakerProfile.appendChild(speakerBio);
-  //Apped speaker profile to speaker tile
+  // Apped speaker profile to speaker tile
+
   speakerTile.appendChild(speakerProfile);
   speakersWrapper.appendChild(speakerTile);
   innerDiv.appendChild(speakersWrapper);
-}
+});
 speakerSection.appendChild(innerDiv);
