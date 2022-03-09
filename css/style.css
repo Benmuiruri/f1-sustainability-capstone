@@ -27,6 +27,14 @@ html {
   font-size: 10px;
 }
 
+.disabled-link {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+
 .hero {
   background-image: url(../images/hero-background.png);
   background-position: center;
@@ -52,7 +60,7 @@ html {
   font-family: var(--lato);
   color: var(--orange);
   font-size: 2.8em;
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .large-text {
@@ -152,13 +160,12 @@ html {
 
 .join-button {
   background-color: var(--orange);
-  padding: 4em;
+  padding: 1em;
   color: var(--white);
   text-decoration: none;
   display: block;
   font-size: 2em;
-  font-weight: bold;
-  margin: 3em;
+  margin: 1em;
 }
 
 /* Partners section styles */
@@ -412,6 +419,7 @@ html {
   .speaker-tile {
     display: flex;
     font-family: var(--lato);
+    padding: 0 1em;
   }
 
   .speaker-full-name {
@@ -430,7 +438,7 @@ html {
   .speaker-bio {
     color: var(--light-black);
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .speaker-img {
@@ -648,7 +656,7 @@ html {
     margin: 1.5em auto;
   }
   .section-header {
-    padding: 3em 0;
+    padding: 1 em 0;
   }
   .program-wrapper {
     display: flex;
@@ -665,7 +673,7 @@ html {
     text-transform: uppercase;
     color: var(--white);
     font-size: 2em;
-    padding: 10em 0;
+    padding: 2em 0;
   }
 
   .program-tile {
@@ -674,16 +682,15 @@ html {
 
   .program-tile i {
     color: var(--white);
-    font-size: 5em;
-    padding: 1em;
-    margin-top: 2em;
+    font-size: 3em;
+    padding: 0.5em;
   }
 
   .program-tile p {
     padding: 1.5em;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 
   /* Speaker section styles */
@@ -798,7 +805,7 @@ html {
     padding: 1.5em;
     letter-spacing: 0.04em;
     line-height: 1.8;
-    width: 65%;
+    width: 78%;
   }
 
   .action-call {
