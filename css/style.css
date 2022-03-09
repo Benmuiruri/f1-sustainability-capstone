@@ -25,7 +25,6 @@
 
 html {
   font-size: 10px;
-  /* font-family: var(--lato); */
 }
 
 .hero {
@@ -34,23 +33,19 @@ html {
   padding-bottom: 3em;
 }
 
-/* title */
-/* font-size: 6rem;
-font-family: 'cocogoose', sans-serif;
-color: var(--seconderyColor);
-background-image: url("/Components/Pages/Assets/main.jpeg");
-background-size: cover;
-background-position: center center;
-background-clip: initial;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; 
-*/
+.greeting {
+  background-image: url(../images/h1-background.jpg);
+  background-size: contain;
+  background-position: center;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .hero-inner-content {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  /* height: 100vh; */
 }
 
 .hero-inner-content h1 {
@@ -58,7 +53,6 @@ background-clip: initial;
   color: var(--orange);
   font-size: 2.8em;
   padding-top: 4em;
-  padding-left: 2em;
 }
 
 .large-text {
@@ -66,7 +60,7 @@ background-clip: initial;
   font-size: 6em;
   text-transform: uppercase;
   color: var(--orange);
-  padding-left: 2em;
+  padding-left: 0.1em;
 }
 
 .large-text span {
@@ -74,37 +68,27 @@ background-clip: initial;
   font-weight: 700;
 }
 
-.hero-inner-text {
-  padding-left: 2em;
-}
-
 .hero-inner-text p {
   border: 5px solid var(--white);
   background-color: var(--light-grey);
   text-align: justify;
-  padding: 1em 1.5em;
-  line-height: 1.5;
   font-family: var(--lato);
-  font-size: 1.2em;
   color: var(--light-black);
-  width: 50%;
 }
 
 .venue-details {
-  padding-left: 2em;
   padding-top: 1em;
+  color: var(--grey);
 }
 .summit-date {
   text-transform: uppercase;
-  color: var(--dark-grey);
-  font-size: 2.7em;
+  font-size: 3em;
   font-weight: bold;
   font-family: var(--lato);
 }
 
 .summit-venue {
   padding-top: 1em;
-  color: var(--dark-grey);
   font-family: var(--lato);
   font-size: 1.9em;
 }
@@ -121,15 +105,15 @@ background-clip: initial;
 .program h2,
 .section-header h2 {
   color: var(--white);
-  font-size: 3em;
+  font-size: 2.7em;
   font-family: var(--lato);
   text-transform: capitalize;
-  padding-top: 0.5em;
+  padding-top: 1.5em;
 }
 
 .orange-line {
   border: 1px solid var(--orange);
-  margin: 3em auto;
+  margin: 1em auto;
   width: 30%;
 }
 
@@ -144,14 +128,14 @@ background-clip: initial;
 
 .program-tile i {
   color: var(--white);
-  font-size: 3em;
-  padding: 2em;
+  font-size: 2em;
+  padding: 1em;
   flex-basis: 10%;
 }
 
 .program-tile h3 {
   color: var(--orange);
-  font-size: 2em;
+  font-size: 1.4em;
   text-transform: capitalize;
   line-height: 1.5;
   font-weight: bold;
@@ -160,8 +144,8 @@ background-clip: initial;
 
 .program-tile p {
   color: var(--white);
-  font-size: 1.5em;
-  padding: 1em 0.3em;
+  font-size: 1.2em;
+  padding: 0.5em 0.3em;
   line-height: 1.5;
   flex-basis: 70%;
 }
@@ -418,7 +402,7 @@ background-clip: initial;
   }
 
   .hero-inner-content h1 {
-    font-size: 0.8em;
+    font-size: 1.5em;
     padding-top: 1em;
     padding-left: 1em;
   }
@@ -426,19 +410,17 @@ background-clip: initial;
   .large-text {
     font-size: 2.8em;
     line-height: 1.1;
-    padding: 0 1em;
+    padding: 0 0.5em;
   }
   .hero-inner-text {
     padding: 0;
-    margin: 0 1em;
+    margin: 0 2em;
   }
   .hero-inner-text p {
-    text-align: justify;
-    padding: 1em 1.5em;
+    padding: 1em;
     line-height: 1.2;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--light-black);
-    letter-spacing: 0.03em;
     width: auto;
   }
 
@@ -643,6 +625,13 @@ background-clip: initial;
   /* Hero styles */
   .hero-inner-content {
     padding-left: 8em;
+  }
+
+  .hero-inner-text p {
+    width: 50%;
+    font-size: 1.5em;
+    line-height: 1.6;
+    padding: 1.5em;
   }
 
   /* Main program styles */
