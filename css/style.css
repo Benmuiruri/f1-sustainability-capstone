@@ -45,8 +45,7 @@ html {
 
 .greeting {
   background-image: url(../images/h1-background.jpg);
-  background-size: contain;
-  background-position: center;
+  background-position: bottom;
   background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
