@@ -626,7 +626,8 @@ html {
   nav {
     font-family: var(--lato);
     padding: 1em;
-    background-color: var(--white);
+    position: absolute;
+    width: 100%;
   }
 
   nav ul {
@@ -640,7 +641,7 @@ html {
 
   nav a {
     color: var(--grey);
-    font-size: 150%;
+    font-size: 180%;
     transition: all 0.3s;
     text-decoration: none;
     display: block;
@@ -720,11 +721,12 @@ html {
 
   .hero {
     height: 80vh;
-    padding-top: 4em;
+    padding-top: 12em;
   }
 
   .hero-inner-content {
     padding-left: 8em;
+    gap: 4em;
   }
 
   .hero-inner-text p {
