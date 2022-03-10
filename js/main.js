@@ -132,6 +132,7 @@ speakers.forEach((speaker) => {
   speakerImgDiv.className = 'speaker-img';
   const speakerImg = document.createElement('img');
   speakerImg.src = `${speaker.imageSrc}`;
+  speakerImg.alt = `${speaker.speakerName}`;
   speakerImgDiv.appendChild(speakerImg);
   speakerTile.appendChild(speakerImgDiv);
   // Create speaker profile
