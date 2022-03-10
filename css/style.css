@@ -13,6 +13,7 @@
   --white: #fff;
   --light-black: #272a31;
   --light-border: rgba(0, 0, 0, 0.25);
+  --footer-grey-bg: #2e2e2e;
 }
 
 @font-face {
@@ -315,6 +316,10 @@ html {
   opacity: 1;
 }
 
+.about-footer {
+  background-color: var(--footer-grey-bg);
+}
+
 /* Mobile view styles */
 
 @media screen and (max-width: 768px) {
@@ -535,6 +540,10 @@ html {
     letter-spacing: 0.03px;
     color: var(--light-black);
     margin-left: 5em;
+  }
+
+  .about-copyright {
+    color: var(--white);
   }
 
   /* About page styles */
@@ -857,6 +866,10 @@ html {
     font-family: var(--lato);
     font-size: 2em;
     color: var(--light-black);
+  }
+
+  .about-copyright {
+    color: var(--white);
   }
 
   /* About page styles */
