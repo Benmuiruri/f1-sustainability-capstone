@@ -40,7 +40,6 @@ html {
 
 .hero {
   background-image: url(../images/hero-background.png);
-  background-position: center;
   padding-bottom: 3em;
   margin-bottom: 3em;
 }
@@ -56,7 +55,7 @@ html {
 .hero-inner-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2.5em;
 }
 
 .hero-inner-content h2 {
@@ -373,7 +372,7 @@ html {
   }
 
   .mobile-nav {
-    background: transparent;
+    position: absolute;
   }
 
   .menu {
@@ -416,15 +415,8 @@ html {
   /* Hero section styles */
 
   .hero-inner-content {
-    /* height: 55vh; */
     padding-top: 3em;
   }
-
-  /* .hero-inner-content h1 {
-    font-size: 1.5em;
-    padding-top: 1em;
-    padding-left: 1em;
-  } */
 
   .large-text {
     font-size: 3.5em;
@@ -728,6 +720,7 @@ html {
 
   .hero {
     height: 80vh;
+    padding-top: 4em;
   }
 
   .hero-inner-content {
