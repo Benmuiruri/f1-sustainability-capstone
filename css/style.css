@@ -714,6 +714,11 @@ html {
   }
 
   /* Hero styles */
+
+  .hero {
+    height: 80vh;
+  }
+
   .hero-inner-content {
     padding-left: 8em;
   }
