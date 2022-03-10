@@ -59,10 +59,11 @@ html {
 }
 
 .hero-inner-content h2 {
-  font-family: var(--lato);
+  font-family: var(--cocogoose-t);
   color: var(--orange);
-  font-size: 2.8em;
+  font-size: 1.5em;
   padding-top: 2em;
+  padding-left: 1em;
 }
 
 .large-text {
@@ -418,14 +419,14 @@ html {
     padding-top: 3em;
   }
 
-  .hero-inner-content h1 {
+  /* .hero-inner-content h1 {
     font-size: 1.5em;
     padding-top: 1em;
     padding-left: 1em;
-  }
+  } */
 
   .large-text {
-    font-size: 2.8em;
+    font-size: 3.5em;
     line-height: 1.1;
     padding: 0 0.5em;
   }
