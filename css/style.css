@@ -42,6 +42,7 @@ html {
   background-image: url(../images/hero-background.png);
   background-position: center;
   padding-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .greeting {
