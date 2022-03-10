@@ -698,7 +698,7 @@ html {
   }
 
   nav li {
-    margin-left: 5em;
+    margin-left: 2em;
   }
 
   nav li:first-child {
@@ -706,7 +706,7 @@ html {
   }
 
   nav li:last-child {
-    margin-left: 15em;
+    margin-left: 6em;
   }
 
   .highlighted {
