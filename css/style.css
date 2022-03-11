@@ -40,6 +40,7 @@ html {
 
 .hero {
   background-image: url(../images/hero-background.png);
+  background-position: center;
   padding-bottom: 3em;
   margin-bottom: 3em;
 }
@@ -55,7 +56,7 @@ html {
 .hero-inner-content {
   display: flex;
   flex-direction: column;
-  gap: 2.5em;
+  gap: 2em;
 }
 
 .hero-inner-content h2 {
@@ -720,13 +721,11 @@ html {
   /* Hero styles */
 
   .hero {
-    height: 80vh;
-    padding-top: 12em;
+    padding-top: 7em;
   }
 
   .hero-inner-content {
     padding-left: 8em;
-    gap: 4em;
   }
 
   .hero-inner-text p {
